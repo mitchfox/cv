@@ -9,13 +9,13 @@ export default function CommissionWork() {
       icon: <Image alt='logo' style={{ height: 'auto', width: '20px', maxWidth: '20px', margin: 'auto' }} src={AlphLogo}/>,
       description: "An easy-to-use components library based on Tailwind CSS.",
     },
-    {
-      title: "KumoNext",
-      link: "#0",
-      icon: <Image alt='logo' style={{ height: 'auto', width: '20px', maxWidth: '20px', margin: 'auto' }} src={AlphLogo}/>,
-      description:
-        "A free frontend framework based on Tailwind CSS and Next.js.",
-    },
+    // {
+    //   title: "KumoNext",
+    //   link: "#0",
+    //   icon: <Image alt='logo' style={{ height: 'auto', width: '20px', maxWidth: '20px', margin: 'auto' }} src={AlphLogo}/>,
+    //   description:
+    //     "A free frontend framework based on Tailwind CSS and Next.js.",
+    // },
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function CommissionWork() {
       <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
         Commisioned Work
       </h2>
-      <div className="grid min-[580px]:grid-cols-2 gap-4">
+      <div className="grid min-[580px]:grid-cols-1 gap-4">
         {items.map((item, index) => (
           <article
             key={index}

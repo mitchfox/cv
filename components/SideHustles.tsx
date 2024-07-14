@@ -14,7 +14,7 @@ export default function SideHustles() {
       title: "Chameleon CV",
       link: "https://www.chameleoncv.com/",
       icon: <Image alt='logo' style={{ height: 'auto', width: '24px', maxWidth: '24px', margin: 'auto' }} src={ChameleonCV}/>,
-      description: "An AI powered resume tool for improving and managing collections of resumes.",
+      description: "AI powered resume tool for improving and managing collections of resumes.",
     },
   ];
 

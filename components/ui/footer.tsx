@@ -1,6 +1,8 @@
 import Signature from '../../public/images/logo.png'
 import Image from 'next/image'
-
+import { FaLinkedin } from "react-icons/fa";
+import { PiDribbbleLogoBold } from "react-icons/pi";
+import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
 
@@ -8,7 +10,7 @@ export default function Footer() {
     <footer className="space-y-12 text-center pb-16">
       {/* Initials logo */}
       <div>
-        <Image alt='logo' style={{ height: 'auto', width: '80vw', maxWidth: '200px', margin: 'auto' }} src={Signature}/>
+        {/* <Image alt='logo' style={{ height: 'auto', width: '80vw', maxWidth: '200px', margin: 'auto' }} src={Signature}/> */}
         
         {/* <svg
           className="inline-flex fill-gray-800 dark:fill-gray-100"
@@ -21,7 +23,7 @@ export default function Footer() {
       </div>
       <div className="space-y-6">
         {/* Social icons */}
-        <ul className="inline-flex gap-4">
+        {/* <ul className="inline-flex gap-4">
           <li>
             <a
               className="w-8 h-8 rounded-full flex items-center justify-center bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600/[0.65] shadow-sm text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100 transition-colors"
@@ -70,7 +72,29 @@ export default function Footer() {
               </svg>
             </a>
           </li>
-        </ul>
+        </ul> */}
+
+        <>
+        <div className="group flex justify-center gap-4 ">
+        <div className="" ><a target="_blank" href="https://dribbble.com/mitchfox"><PiDribbbleLogoBold /></a></div>
+
+        <div className="" ><a target="_blank" href="https://www.linkedin.com/in/mitch-fox/"><FaLinkedin /></a></div>
+
+        <div className="" ><a target="_blank" href="https://github.com/mitchfox"><FaGithub /></a></div>
+
+
+      </div>
+
+        <a
+          className="btn-sm text-gray-200 dark:text-gray-800 bg-gradient-to-r from-gray-800 to-gray-700 dark:from-gray-300 dark:to-gray-100 dark:hover:bg-gray-100 shadow relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.2)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]"
+          href='mailto:xyz@yourapplicationdomain.com?subject=Me&body=Hello!'
+        >
+          Get in touch
+        </a>
+        
+        </>
+
+        
         {/* Copyright notes */}
         <p className="text-sm text-gray-400 dark:text-gray-600">
           &copy; Mitchell Fox. All rights reserved.
